@@ -24,7 +24,7 @@ const obj2 ={4:"a",5:"b",6:"c"}
 // const obj3={obj1,obj2} //add an object inside the object
 // const obj3=Object.assign({},obj1,obj2)     //{source}, target
 const obj3={...obj1,...obj2}         //spreading vALUES
-console.log(obj3);
+// console.log(obj3);
 
 //database scenario access and object value in an array
 const user=[
@@ -37,8 +37,40 @@ const user=[
 ]
 
 user[1].email
-console.log(appUser);
-console.log(Object.keys(appUser));
-console.log(Object.values(appUser));
-console.log(Object.entries(appUser));
-console.log(appUser.hasOwnProperty('logged'));
+// console.log(appUser);
+// console.log(Object.keys(appUser));
+// console.log(Object.values(appUser));
+// console.log(Object.entries(appUser));
+// console.log(appUser.hasOwnProperty('logged'));
+
+const course={
+    coursename:"Js in Urdu",
+    price: "999",
+    courseInstructor:"Sajjad"
+}
+
+// course.clourse Instructor
+const {courseInstructor: instructor}=course
+console.log(instructor)
+
+
+//react conept
+// const navbar = ({company})=>{
+
+// }
+// navbar(company="sajjad")
+
+//API Stuctures
+//inobjectform
+// {
+//     "coursename":"Js in Urdu",
+//     "price": "free",
+//     "courseInstructor":"Sajjad"
+// }
+
+//in array form
+//[
+//{},
+//{},
+//{}
+//]
