@@ -1,0 +1,19 @@
+//Javascript Execution Context
+
+// First forms 1. Gloabl Execution Context   - access by this.
+//Javascript is single threaded
+//2. Function Execution Context
+//3. Eval Execution Context
+
+//First Phase: Memory Creation Phase          //allocate memory only
+//Second Phase: ExecutionPhase                //execute prohrams
+
+
+//Global Execution  - Enviroment      => This
+//Memory Phase    - Storesa and collects all varaibles  Val1=Undefined Val2=Undefined addnum=defination
+//Execution Phase - Give values to varaible Val1=10 val2=5   function addone-> [new variable enviroment + Execution Thread] <-after it has done its work it is deleted
+
+
+//Newvaraible execution -> Memory Pahse -> Execution Phase
+
+// Call stack -> Lifo
