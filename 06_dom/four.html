@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #393939; color: #ffff;">
+    <ul class="Languages">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li=document.createElement('li'); 
+        li.innerHTML=`${langName}`                     //not optimized traverse all tree
+        document.querySelector('.Languages').appendChild(li)
+    }
+    addLanguage("Python")
+
+    function addOptiLang(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName))          //optimized doesnt traverse all tree
+        document.querySelector('.Languages').appendChild(li)
+    }
+    addOptiLang("Puthon2")
+
+    //Edit
+    const secLang=document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML="Mojo"       //not optimized
+    const newli=document.createElement('li')
+    newli.textContent="Mojo"
+    // newli.appendChild(document.createTextNode("Mojo"))          //optimized doesnt traverse all tree
+    secLang.replaceWith(newli)
+
+    //edit
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>'
+
+    //remove
+
+    const lastLang= document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
