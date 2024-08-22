@@ -1,4 +1,5 @@
-html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,43 @@ html lang="en">
    </div>
 </body>
 <script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert("owl clicked")
+    // }
+
+    //attachEvent method()
+    //jQuery - on
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //         console.log("click inside the ul")
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //         console.log("Owl Clicked!")
+    //         e.stopPropagation()
+    // },false)
+
+    //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    // interivew prospective: clientX,clientY, screenX,screenY
+    //altkey, ctrlkey, shiftkey, keyCode   => create a keyboard to measure speed
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault()
+        console.log("google clicked")
+        e.stopPropagation()
+    },false)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+            console.log(e.target.parentNode)
+            if(e.target.tagName==='IMG'){
+                let removeIt = e.target.parentNode
+                removeIt.remove()
+            //removeIt.parentNode.removeChild(removeIt)
+            }
+
+    },false)
+
 
 </script>
 </html>
