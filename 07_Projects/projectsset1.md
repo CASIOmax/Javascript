@@ -185,6 +185,25 @@ function newGame() {
 ## Project 5
 
 ```Javascript
+const insert=document.getElementById('insert');
+window.addEventListener('keydown', function (e) {
+    // if (event.key === 'g') {
+    // document.body.style.backgroundColor = 'green';
+    // }
+    insert.innerHTML=`
+    <table>
+    <tr>
+        <th>key</th>
+        <th>keyCode</th>
+        <th>code</th>
+    </tr>
+    <tr>
+        <td>${e.key === " "?"Space":e.key}</td>
+        <td>${e.keyCode}</td>
+        <td>${e.code}</td>
+    </tr>
+    </table>`;
+});
 ```
 
 ## Project 6
