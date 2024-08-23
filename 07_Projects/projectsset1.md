@@ -181,3 +181,42 @@ function newGame() {
   });
 }
 ```
+
+## Project 5
+
+```Javascript
+```
+
+## Project 6
+
+```Javascript
+const colorGen=function(){
+    const hex='0123456789ABCDEF';
+    let color='#';
+    for (let i = 0; i< 6; i++) {
+      color+=hex[Math.floor(Math.random()*16)];         //The math .random operation is like it gives out an array entery to hex and it iterates over the 16 digits it has to create a hex code after 6 iterations
+    }
+    return color;
+}
+
+    const start=document.querySelector('#start')
+    const stop=document.querySelector('#stop')
+    
+    let intervalId;
+
+    //Start
+    const startChangingColor=function(){
+        intervalId=setInterval(change,1000)
+
+        function change(){
+        document.body.style.backgroundColor=colorGen();
+        }
+    }
+
+    const stopChangingColor=function(){
+        clearInterval(intervalId)
+    }
+
+    document.querySelector('#start').addEventListener('click',startChangingColor)  
+    document.querySelector('#stop').addEventListener('click',stopChangingColor)
+```
