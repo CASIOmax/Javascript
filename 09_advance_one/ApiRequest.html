@@ -6,12 +6,12 @@
     <title>Document</title>
 </head>
 <body style="background-color: #ffff;">
-    <div class="image">
-        
+    <div class="image" >
+        <img src="" alt="Image" id="pfp" style="width: 100px; height: 100px;">
     </div>
     <div class="info">
-        <p class="followers">Followers:</p>
-        <p class="following">Following:</p>
+        <p id="followers">Followers:</p>
+        <p id="following">Following:</p>
     </div>
 </body>
 <script>
@@ -23,14 +23,23 @@
         if(xhr.readyState==4){
             const data=JSON.parse(this.responseText);
             console.log(data);
-            console.log(data.avatar_url);
             let img= data.avatar_url;
+
+            const image=document.querySelector('#pfp')
+            image.src=data.avatar_url;
+
+            document.querySelector('#followers').innerHTML+=data.followers
+            document.querySelector('#following').innerHTML+=data.following
+
         }
     }
     xhr.send();
     
     //Assigment to create a card with followers and followings
-    const imageBox=document.querySelector('.image')
-    imageBox.innerHTML="Text";
+    // const imageBox=document.querySelector('.image')
+    // imageBox.innerHTML="Text";
+
+    // const image=document.querySelector('#pfp')
+    // image.src=
 </script>
 </html>
