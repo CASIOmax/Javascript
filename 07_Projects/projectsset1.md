@@ -206,8 +206,9 @@ const colorGen=function(){
 
     //Start
     const startChangingColor=function(){
-        intervalId=setInterval(change,1000)
-
+        if(!intervalId){
+            intervalId=setInterval(change,1000)
+        }
         function change(){
         document.body.style.backgroundColor=colorGen();
         }
@@ -215,6 +216,8 @@ const colorGen=function(){
 
     const stopChangingColor=function(){
         clearInterval(intervalId)
+        intervalId=null;
+
     }
 
     document.querySelector('#start').addEventListener('click',startChangingColor)  
