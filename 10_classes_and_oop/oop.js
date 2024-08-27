@@ -32,3 +32,4 @@ const usertne=new adduser("sdada",231)
 
 userOne.greeting()
 usertne.greeting()
+console.log(userOne instanceof adduser)
