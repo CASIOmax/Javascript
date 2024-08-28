@@ -4,7 +4,7 @@ Welcome to the **JavaScript Learning Repository**! This repository contains all 
 
 ## About the YouTube Playlist
 
-I followed the **Chai Aur JavaScript** playlist by Chai Aur Code, which is an excellent resource for anyone looking to build a strong foundation in JavaScript. The playlist covers a wide range of topics, from basic concepts to more advanced JavaScript features. You can find the playlist [here](https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37).
+I followed the **Chai Aur JavaScript** playlist by Chai Aur Code, which is an excellent resource for anyone looking to build a strong foundation in JavaScript. The playlist is taught by [Hitesh Choudhary](https://github.com/hiteshchoudhary), a seasoned developer and educator who simplifies complex concepts and makes learning enjoyable. You can find the playlist [here](https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37).
 
 ## Repository Structure
 
@@ -58,6 +58,6 @@ This repository is organized into several folders, each corresponding to differe
 
 ## Acknowledgments
 
-A big thank you to [Chai Aur Code](https://www.youtube.com/@chaiaurcode) for providing such a comprehensive and easy-to-follow playlist. Their content has been instrumental in my learning journey.
+A big thank you to [Hitesh Choudhary](https://github.com/hiteshchoudhary) for his exceptional teaching and for creating such a comprehensive and easy-to-follow playlist. His content on [Chai Aur Code](https://www.youtube.com/@chaiaurcode) has been instrumental in my learning journey.
 
 Happy coding! ☕🚀
