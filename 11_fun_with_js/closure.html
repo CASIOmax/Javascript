@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+
+</body>
+<script>
+    //lexical scoping
+//     function outer(){
+//         let username="sajjad";
+//         function inner(){
+//             console.log("INNER:", username);
+//         }
+//         inner()
+//     }
+//     outer()
+// console.log("OUTER:",username);
+    
+
+// Closure
+// function makeFunc() {
+//   const name = "Mozilla";
+//   function displayName() {
+//     console.log(name);
+//   }
+//   return displayName;            //returns complete lexical scope
+// }
+
+// const myFunc = makeFunc();
+// myFunc();
+
+// document.getElementById("orange").onclick=function(){
+//     document.body.style.backgroundColor='orange'
+// }
+// document.getElementById("green").onclick=function(){
+//     document.body.style.backgroundColor='green'
+// }
+
+function clickHandle(color){
+    //  document.body.style.backgroundColor=`${color}`  //we need function as return not this
+    return function(){
+        document.body.style.backgroundColor=`${color}`
+    }
+}
+
+document.getElementById('green').onclick=clickHandle("green")
+document.getElementById('orange').onclick=clickHandle("orange")
+
+
+</script>
+</html>
