@@ -29,4 +29,5 @@ console.log(url.includes('sajjad'));
 console.log(gameName.split('-'));             //splits based on the thing
 console.log(gameName.split('a'));
 
-
+const arr=[1,2,3]
+console.log(typeof arr)
